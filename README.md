@@ -1,61 +1,66 @@
 # Account Management Application
+
 A React-based user management application with features for account creation, authentication, and profile management.
-Features
-Authentication
 
-1. User registration with validation
-2. Secure login functionality
-3. Protected routes for authenticated users
-4. Automatic redirect to dashboard after login
+## Features
 
-# User Management
+### Authentication
+- User registration with validation
+- Secure login functionality
+- Protected routes for authenticated users
+- Automatic redirect to dashboard after login
 
-1. Create new user accounts
-2. View and edit profile information
-3. Persistent user data using localStorage
-4. Form validation for all user inputs
+### User Management
+- Create new user accounts
+- View and edit profile information
+- Persistent user data using localStorage
+- Form validation for all user inputs
 
-# Profile Management
+### Profile Management
+- View complete profile details
+- Edit profile information
+- Validation for profile updates
+- Real-time feedback on form submissions
 
-1. View complete profile details
-2. Edit profile information
-3. Validation for profile updates
-4. Real-time feedback on form submissions
+### User Interface
+- Clean and modern design
+- Responsive layout
+- Toast notifications for user feedback
+- Intuitive navigation
+- Form validation messages
+- Loading states and error handling
 
-# User Interface
+## Technology Stack
 
-1. Clean and modern design
-2. Responsive layout
-3. Toast notifications for user feedback
-4. Intuitive navigation
-5. Form validation messages
-6. Loading states and error handling
+- React.js
+- React Router DOM
+- React Hot Toast
+- Lucide React (for icons)
+- Bootstrap (for styling)
+- LocalStorage (for data persistence)
 
-Technology Stack
+## Installation
 
-1. React.js
-2. React Router DOM
-3. React Hot Toast
-4. Lucide React (for icons)
-5. Bootstrap (for styling)
-6. LocalStorage (for data persistence)
-
-Installation
-
-A.) Clone the repository:
-
-bashCopygit clone [repository-url]
+1. Clone the repository:
+```bash
+git clone [repository-url]
 cd account-management-app
+```
 
-B.) Install dependencies:
+2. Install dependencies:
+```bash
+npm install
+```
 
-bashCopynpm install
+3. Start the development server:
+```bash
+npm run dev
+```
 
-C.) Start the development server:
+## Dependencies
 
-bashCopynpm run dev
-Dependencies
-jsonCopy{
+```json
+{
   "dependencies": {
     "react": "^18.x.x",
     "react-dom": "^18.x.x",
@@ -65,36 +70,35 @@ jsonCopy{
     "bootstrap": "^5.x.x"
   }
 }
-Usage
-A.) Registration
+```
 
-Navigate to the registration page
-Fill in required details:
+## Usage
 
-Full Name
-Gender
-Email
-Password
-About (optional)
+### Registration
+1. Navigate to the registration page
+2. Fill in required details:
+   - Full Name
+   - Gender
+   - Email
+   - Password
+   - About (optional)
+3. Submit the form to create an account
 
+### Login
+1. Navigate to the login page
+2. Enter email and password
+3. Submit to access your account
 
-Submit the form to create an account
+### Profile Management
+1. Click on Profile in the navigation bar
+2. View your profile information
+3. Click "Edit Profile" to modify details
+4. Save changes to update your profile
 
-B.) Login
+## Project Structure
 
-Navigate to the login page
-Enter email and password
-Submit to access your account
-
-C.) Profile Management
-
-Click on Profile in the navigation bar
-View your profile information
-Click "Edit Profile" to modify details
-Save changes to update your profile
-
-D.) Project Structure
-Copysrc/
+```
+src/
 ├── components/
 │   ├── Login.js
 │   ├── Register.js
@@ -105,10 +109,12 @@ Copysrc/
 └── styles/
     ├── Register.css
     └── Navigation.css
-Validation Rules
-Registration & Profile Update
+```
 
-Full Name: Cannot contain numbers
-Email: Must be valid format
-Password: Minimum 8 characters
-About: Maximum 500 characters
+## Validation Rules
+
+### Registration & Profile Update
+- Full Name: Cannot contain numbers
+- Email: Must be valid format
+- Password: Minimum 8 characters
+- About: Maximum 500 characters
